@@ -93,7 +93,9 @@ You are in the water. Above you is your <:gondola>gondola</>, parked against the
         {Windows > xleft:
             You move the gondola a few feet left. # didascalie
             ~ Windows --
-            You are now under the {name_window()} window. # didascalie
+            {actions_window.looked:
+                - You are now under the {name_window()} window. # didascalie
+            }
         -else :
             You can't move the gondola further left. # didascalie
         }
@@ -101,7 +103,9 @@ You are in the water. Above you is your <:gondola>gondola</>, parked against the
         {Windows < xright:
             You move the gondola a few feet right. # didascalie
             ~ Windows ++
-            You are now under the {name_window()} window. # didascalie
+            {actions_window.looked:
+                - You are now under the {name_window()} window. # didascalie
+            }
         -else :
             You can't move the gondola further right. # didascalie
         }
